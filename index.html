@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Predict edible mushrooms</title>
+  </head>
+  <body>
+    <main>
+      <section class="titleSection">
+        <div class="container titleContainer">
+          <h1>Predict if a mushroom is edible using a decision tree</h1>
+        </div>
+      </section>
+      <section class="inputOutputSection">
+        <div class="container inputContainer">
+          <div class="color">
+            <label for="color">Choose a color:</label>
+            <select id="color" name="color">
+              <option value="n">Brown</option>
+              <option value="b">buff</option>
+              <option value="c">cinnamon</option>
+              <option value="g">green</option>
+              <option value="p">pink</option>
+              <option value="u">purple</option>
+              <option value="e">red</option>
+              <option value="w">white</option>
+              <option value="y">yellow</option>
+            </select>
+          </div>
+          <div class="odor">
+            <label for="odor">Choose an odor: </label>
+            <select name="odor" id="odor">
+              <option value="a">almond</option>
+              <option value="l">anise</option>
+              <option value="c">creosote</option>
+              <option value="y">fishy</option>
+              <option value="f">foul</option>
+              <option value="m">musty</option>
+              <option value="n">none</option>
+              <option value="p">pungent</option>
+              <option value="s">spicy</option>
+            </select>
+          </div>
+          <div class="bruises">
+            <label for="bruises">Has bruises:</label>
+            <select name="bruises" id="bruises">
+              <option value="t">yes</option>
+              <option value="f">no</option>
+            </select>
+          </div>
+          <button id="btnCheck">Check if edible</button>
+        </div>
+        <div class="container outputContainer">
+          <p id="output">Waiting for input...</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
